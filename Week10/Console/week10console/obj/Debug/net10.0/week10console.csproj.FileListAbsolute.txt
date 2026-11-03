@@ -1,0 +1,15 @@
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.AssemblyInfoInputs.cache
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.AssemblyInfo.cs
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.csproj.CoreCompileInputs.cache
+C:\Users\rsier\source\repos\week10console\bin\Debug\net10.0\week10console.exe
+C:\Users\rsier\source\repos\week10console\bin\Debug\net10.0\week10console.deps.json
+C:\Users\rsier\source\repos\week10console\bin\Debug\net10.0\week10console.runtimeconfig.json
+C:\Users\rsier\source\repos\week10console\bin\Debug\net10.0\week10console.dll
+C:\Users\rsier\source\repos\week10console\bin\Debug\net10.0\week10console.pdb
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.dll
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\refint\week10console.dll
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.pdb
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10console.genruntimeconfig.cache
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\ref\week10console.dll
+C:\Users\rsier\source\repos\week10console\obj\Debug\net10.0\week10co.A31FD087.Up2Date

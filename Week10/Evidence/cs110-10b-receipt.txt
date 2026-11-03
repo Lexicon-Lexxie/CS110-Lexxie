@@ -1,0 +1,33 @@
+CS110 / ACTION 10B / THREE HELLO WORLD INVESTIGATIONS
+Receipt schema: cs110.action10b.v2
+Created: 2026-10-29T21:09:33.915Z
+Learner: Team Awayzo
+GitHub: https://github.com/Lexicon-Lexxie/cs110-week10/
+Tool: Unity
+Engine run result: I ran it and saw Hello World
+Due: October 29, 2026 at 3:05 PM Pacific
+Working arrangement: Group
+Lead: Lexxie
+Members / contributions: Lexxie - Lead, Git coordinator & Engine build
+Rudy - Console implementation & AI verification
+Paulina - WPF / XAML implementation & code review
+Sam - Whiteboard diagram
+Nico - Evidence documentation
+Task | Owner | Status:
+Task | Owner | Status
+Console Hello World | Paulina | Completed
+WPF / XAML Window | Rudy | Completed
+Game Engine Attempt | Lexxie | Completed
+Whiteboard & Peer Check | Sam | Completed
+README & Receipt Integration | Lexxie | In progress
+
+DECLARED COMPLETE / R1 / Investigate the lecture and plan / 2 points
+DECLARED COMPLETE / R2 / Console Hello World / 3 points
+DECLARED COMPLETE / R3 / WPF / XAML Hello World / 3 points
+DECLARED COMPLETE / R4 / Game Engine Hello World attempt / 4 points
+DECLARED COMPLETE / R5 / GitHub package and receipt / 3 points
+
+Package: Console/ + WPF/ + EngineTrial/ + README + Evidence + this receipt.
+Save inside Evidence, commit, push and submit the GitHub URL to Canvas.
+Canvas: https://sbccd.instructure.com/courses/66804/assignments/1913888
+This receipt records learner declarations. It does not verify attendance, accuracy, instructor approval, Canvas submission or a grade.
