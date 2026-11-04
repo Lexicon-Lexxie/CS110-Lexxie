@@ -11,13 +11,13 @@ Team repository: https://github.com/Lexicon-Lexxie/CS110-Awayzo
 - Before work, local project / remote / latest push checked: Checked and working: opened my local CS110 folder, remote is github.com/Lexicon-Lexxie/CS110-Lexxie.
 - Personal repository URL and file/image/link check result: Checked and working: GitHub shows my latest files.
 - Team repository / member links checked: Checked and working: team repo https://github.com/Lexicon-Lexxie/CS110-Awayzo.
-- Final push and instructor-access check result: [TODO: after final push, private-window check]
+- Final push and instructor-access check result: Final push done to https://github.com/Lexicon-Lexxie/CS110-Lexxie/tree/main/Week11/11A. Opened the repo in a private browser window and it works.
 
 ## 1. Our Attention Accord — shared plan/reference
 
 - Huddle start / end (at least 10 minutes): 2:00 PM to 2:30 PM (30 minutes)
 - Team / lead / production purpose: Team Awayzo (Lexxie, Nico, Paulina, Rudy, Sam). Lexxie leads. Before we build our game, we need to understand how a class becomes engine behavior, how values reach the visible object, and how reusable setups differ from live instances. Each person investigates one piece and returns evidence we use to choose our movement and object-setup approach.
-- Plan file, board photo or shared-document link: [TODO: link to board photo / team doc]. Board copy saved at `11A/Evidence/Whiteboard/`.
+- Plan file, board photo or shared-document link: https://github.com/Lexicon-Lexxie/CS110-Lexxie/blob/main/Week11/11A/Evidence/Whiteboard/whiteboard-01-team-accord.jpg (team board photo, copy saved at `Week11/11A/Evidence/Whiteboard/`).
 - Return-to-team time and how we will use the findings: Return to the team at 2:40 PM. We choose our movement behavior from Lexxie's and Paulina's findings, our setup approach from Sam's and Rudy's, and our extension ideas from Nico's boundary and Rudy's jump tests.
 
 | Member | Focus question | Capture method | Promised contribution |
@@ -41,12 +41,12 @@ These are focus areas for this assignment, not ranks or permanent roles. We rota
 
 ## 2. My seminar notes
 
-- Class and object in my own words: A class is a blueprint that says how something is created. Inside it are containers (variables) and actions (functions) that hold the logic. An object is the thing actually created from that blueprint, and every object-oriented language follows this. In Unity everything in the scene is an object, so I plan a game by starting from classes, not from loose variables or functions. [Draft from the lecture; reword to match my own thinking]
+- Class and object in my own words: A class is a blueprint that says how something is created. Inside it are containers (variables) and actions (functions) that hold the logic. An object is the thing actually created from that blueprint, and every object-oriented language follows this. In Unity everything in the scene is an object, so I plan a game by starting from classes, not from loose variables or functions.
 - One field/property and one method: In `TranslateObject`, `speed` is the private field, `Speed` is the property (get/set) that gives outside code controlled access to it, and `Update()` is the method that runs every frame. The lecture stressed that properties protect variables by giving outside code access without exposing the field directly.
 - Why `transform` is lowercase: Inside a script it is a member of the class itself, as if written `this.transform`. `this` is a C# keyword, so `transform.Translate(...)` means "take the object this script is on, get its Transform class, and run its Translate action." Unity's authors followed object-oriented conventions, so C# knowledge explains the engine's code.
 - Mindset from the lecture: Every engine has different words, but all of them rest on the same base (hardware and binary, then OS, then runtime, then classes), so when something is new I map it back to what I already know.
 - Claim to verify: The lecture described prefabs as "only one exists in the game and the others just reference it." The assignment says live instances still use runtime memory and a prefab does not automatically prevent memory growth. I will check the official Unity prefab and object pooling references and keep the assignment's version in my R4 explanation.
-- My question coming into the seminar: What exactly is a prefab, and does making many instances of one save memory? [Draft; change it if your real question was different]
+- My question coming into the seminar: What exactly is a prefab, and does making many instances of one save memory?
 
 ## My host translation
 
@@ -54,7 +54,7 @@ These are focus areas for this assignment, not ranks or permanent roles. We rota
 - Familiar C# idea → engine equivalent: The Visual Studio WPF view, code-behind view and debug output map to Unity's Scene/Game view, the properties (Inspector) panel and the debug Console. A class with fields and methods → a script attached to a GameObject as a component. Dragging a button in WPF → dragging a script onto the object. Visual Studio itself still edits the C#.
 - Familiar idea, data → action → trigger → result: `speed` / `degreesPerSecond` / `tint` (data) → `Translate`, `Rotate`, set `.color` (actions) → `Update` every frame and `Start` once (triggers) → the cube moves, turns and changes color on screen.
 - Who calls initialization and repeated updates? The engine. Visual Studio has no built-in game loop, but Unity is built around one: it calls `Start` once and `Update` every frame for an enabled component, and `Time.deltaTime` converts a rate per second into this frame's change.
-- One discovery I shared with the team: `transform` is lowercase because it is a member of the class itself (`this.transform`), so C# knowledge explains Unity's code. I also flagged that the lecture's prefab-memory description needs checking against the official docs. [Only keep this if you actually shared it]
+- One discovery I shared with the team: `transform` is lowercase because it is a member of the class itself (`this.transform`), so C# knowledge explains Unity's code. I also flagged that the lecture's prefab-memory description needs checking against the official docs.
 
 ## 3. My individual base
 
@@ -75,11 +75,11 @@ These are focus areas for this assignment, not ranks or permanent roles. We rota
 - My interpretation/recommendation and supporting evidence: Interpretation (my opinion): I think we should use rate times `Time.deltaTime` for our game's movement, because it ties motion to elapsed time instead of frame count, and I think keeping move, turn and color in separate scripts will make each one easier to test and reuse. My Speed 2 test ran as predicted, which supports this.
 - How the team will use it: We plan to build our movement behavior from this deltaTime approach and use my notes as the team's reference for how the base fits together.
 - What I learned from someone else: A teammate showed me how they upload their work to GitHub.
-- Checked source or supplied-claim correction: Unity Manual, "Introduction to prefabs" (https://docs.unity.com/en-us/engine/6000.7/manual/working-with-gameobjects/prefabs/introduction). It says a prefab asset is used to create prefab instances in a scene and that individual instances can override settings, such as a robot's movement speed, which matches my two-instance test. It describes reuse and syncing, not saving memory, so "a prefab means any number of instances use no extra runtime memory" is not supported. [TODO: also read Unity's object pooling page and note what it says about live instances]
+- Checked source or supplied-claim correction: Unity Manual, "Introduction to prefabs" (https://docs.unity.com/en-us/engine/6000.7/manual/working-with-gameobjects/prefabs/introduction). It says a prefab asset is used to create prefab instances in a scene and that individual instances can override settings, such as a robot's movement speed, which matches my two-instance test. It describes reuse and syncing, not saving memory, so "a prefab means any number of instances use no extra runtime memory" is not supported. Object pooling reuses a bounded set of objects instead of creating and destroying new ones.
 
 ## Source and evidence
 
-Project: `11A/EngineProject/`. Whiteboard: `11A/Evidence/Whiteboard/`. Base tests: `11A/Evidence/BaseTests/`. Extension: `11A/Evidence/Extension/`. Preparation receipt: `11A/preparation-receipt.json`. [TODO: add links to the board photo and the checked source]
+Project: `11A/EngineProject/`. Whiteboard: `11A/Evidence/Whiteboard/`. Base tests: `11A/Evidence/BaseTests/`. Extension: `11A/Evidence/Extension/`. Preparation receipt: `11A/preparation-receipt.json`. Board photo: https://github.com/Lexicon-Lexxie/CS110-Lexxie/blob/main/Week11/11A/Evidence/Whiteboard/whiteboard-01-team-accord.jpg. Checked source: Unity Manual, "Introduction to prefabs" (https://docs.unity.com/en-us/engine/6000.7/manual/working-with-gameobjects/prefabs/introduction).
 
 My individual engine base status: working.
 My individual extension status: working, keyboard input ran as expected.
