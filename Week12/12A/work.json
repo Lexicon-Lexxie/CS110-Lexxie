@@ -1,0 +1,79 @@
+{
+  "draftRevision": 7,
+  "me": {
+    "id": "PERSON-534364FED196749589B55B74",
+    "name": "Lexxie",
+    "verificationCode": "VIEW-9265F91D9B43EF8355AB19A9"
+  },
+  "draft": {
+    "prep": {
+      "repo": "https://github.com/Lexicon-Lexxie/CS110-Lexxie",
+      "gitTest": "I made my folder inside my repository, with the structure with 12A, I added a plain txt file just so there is something in there for now.",
+      "access": "the git is public, I plan on doing this project solo this time around.",
+      "video1": "Observation:\nI reviewed the pipeline workflow video and observed the importance of establishing a standardized project folder hierarchy and living documentation before writing any code or importing random assets.\n\nUseful Idea & Interpretation:\nA core idea is that a solid, predetermined folder structure combined with modular ReadMe/HTML files isn't just file management—it is a team communication tool. When every team member knows exactly where models, scripts, audio, and documentation belong, onboarding is seamless and the risk of merge conflicts or misplaced dependencies is greatly reduced.\n\nQuestion:\nWhat naming conventions and folder templates does our team plan to agree upon so we avoid broken references when sharing assets in Unity/version control?",
+      "video2": "Observation:\nI reviewed the developer mindset video and observed that technical setbacks and bugs are framed not as personal shortcomings, but as normal, necessary milestones in the development cycle.\n\nUseful Idea & Interpretation:\nA core idea presented is treating failure as data rather than defeat. In software and game development, builds break and features fail routinely. Having a growth mindset means actively dissecting mistakes, embracing challenges outside our current comfort zone, and focusing on effort rather than fixed ability so that roadblocks turn into learning opportunities.\n\nQuestion:\nWhen we run into code or design failures during sprints, what process will we use as a team to debrief and troubleshoot without placing blame?",
+      "video3": "Observation:\nI reviewed the folder and project setup demonstration and observed how establishing a dedicated directory structure (such as separating Context, Requirements, Resources, and dedicated game build folders) prevents clutter before any engine work begins.\n\nUseful Idea & Interpretation:\nA critical idea is structuring folders not just for personal convenience, but for team accessibility and onboarding. By utilizing JSON templates or standardized folder blueprints that include local ReadMe files and requirement checklists, any new team member can immediately understand where assets live, what each folder is for, and what prerequisites are needed without constant back-and-forth communication.\n\nQuestion:\nWhat core folder structure and root path naming rules will our team enforce before creating the shared Unity repository to ensure everyone stays consistent?",
+      "video4": "Observation:\nI reviewed the documentation video and observed that a Game Development Document (GDD) is treated not as a static, one-time chore, but as a living blueprint that evolves alongside the game as mechanics and milestones are tested.\n\nUseful Idea & Interpretation:\nA central idea is that documentation acts as the single source of truth for the entire team—defining the narrative, core game loop, required art/audio assets, and individual member responsibilities. My interpretation is that having clear, centralized documentation prevents disputes and scope creep because every decision is measured against the agreed-upon design pillars rather than vague assumptions.\n\nQuestion:\nWho on our team will be responsible for keeping the GDD updated as we iterate, and where will it be hosted so everyone has real-time access?",
+      "video5": "Observation:\nI reviewed the introduction to Unity video and observed the core layout of the Unity Editor—specifically the relationship between the Hierarchy (objects currently in the scene), Scene view (3D editor viewport), Game view (rendered player camera), Inspector (object properties and components), and the Project window (asset file structure).\n\nUseful Idea & Interpretation:\nMastering viewport navigation shortcuts (holding Alt + Left Click to orbit, Middle Click to pan, and pressing F to focus/frame a selected object) along with Ctrl + D to duplicate assets is essential for developer velocity. Being comfortable navigating 3D space and quickly switching between Scene and Game view prevents disorientation and allows team members to build and iterate on environments much faster.\n\nQuestion:\nWhat default editor layout and common tool settings should our team standardize so our screens and workflows look consistent during screen shares or pairing sessions?",
+      "video6": "Observation:\nI reviewed the custom player import video and observed how a 3D model (like an FBX downloaded from Mixamo) can immediately inherit existing controller logic and animations by setting its Rig Animation Type to Humanoid and assigning its new Avatar to the player's Animator component.\n\nUseful Idea & Interpretation:\nUnity’s Humanoid rig system acts as a universal bone-mapping bridge. As long as our imported custom character and the template controller are both rigged as Humanoid avatars, we don't have to rebuild running, jumping, or sprint animations from scratch. This allows our art team to swap character models effortlessly while keeping core gameplay mechanics intact.\n\nQuestion:\nWhat character scale and bone naming conventions will our artists follow in Mixamo/Blender to ensure custom models retarget cleanly to Unity’s Humanoid avatar system?",
+      "opinion": "Observation:\nConnecting our pipeline videos to my concept for StimuLye (where the protagonist \"NaN\" reconstructs a hospital and liminal memory rooms from total darkness), I decided that our team must strictly limit our initial build to the \"Vertical Slice\" demonstrated in the pipeline—focusing only on the dark opening, one looping ward corridor, and one interactive memory room.\n\nUseful Idea & Interpretation:\nThe pipeline's emphasis on modular Prefabs and scope management is the exact vehicle needed to make StimuLye playable. In the story, interacting with \"Stimuli\" objects restores stability to the dark void. By building our hospital walls, doors, and memory props as modular Unity prefabs with shared materials, we can dynamically spawn or trigger room transformations without having to hand-model endless unique rooms. Furthermore, formalizing this in our GDD keeps us from expanding into all four acts before the core sensory-restoration mechanic actually feels compelling.\n\nQuestion:\nHow can we design our modular corridor and room prefabs so that a simple material or lighting swap can visually transition the hospital from normal to decaying liminal space as \"Static\" approaches?",
+      "questions": "What I Did / Decided / Observed:\nI reviewed the complete preparation pipeline—from developer mindset and folder architecture to GDD documentation, prefabs, and character rigging. Based on our past discussions around StimuLye, I decided that before committing to a final team role and project mission, we must resolve our core technical constraints, role boundaries, and MVP scope so we don't encounter friction or scope creep mid-sprint.\n\nQuestions to Resolve Before Committing:\n\n    Scope & MVP: Are we all in agreement to build strictly a tight vertical slice (the dark opening, one looping ward corridor, and one interactive memory room) rather than attempting all four acts right away?\n\n    Technical Pipeline: What specific Unity version (e.g., 2021.3 LTS), render pipeline (URP), and version control system (GitHub / Unity Version Control) are we locking in to avoid broken package dependencies?\n\n    Role Ownership: Who is taking primary ownership as Lead vs. Support across the essential pipeline roles (Programming/Player Controller, 3D Assets/Modular Prefabs, Sound Design, and GDD Documentation)?"
+    },
+    "currentPage": 20
+  },
+  "receipts": [],
+  "clocks": [
+    {
+      "code": "TIME-096E904E83B4BD764B9404FD",
+      "name": "Lexxie",
+      "day": "A",
+      "arrival": "2026-11-10T21:02:47.141Z",
+      "start": "2026-11-10T20:45:00Z",
+      "calculated": 15,
+      "deduction": 15,
+      "status": "Calculated · awaiting instructor review"
+    }
+  ],
+  "team": null,
+  "invites": [],
+  "serverNow": "2026-11-10T21:02:47.253Z",
+  "github": {
+    "workspaceId": "PERSON-534364FED196749589B55B74",
+    "repo": {
+      "owner": "Lexicon-Lexxie",
+      "repo": "CS110-Lexxie",
+      "fullName": "Lexicon-Lexxie/CS110-Lexxie",
+      "url": "https://github.com/Lexicon-Lexxie/CS110-Lexxie",
+      "id": 1444854052,
+      "private": false,
+      "defaultBranch": "main",
+      "verifiedAt": "2026-11-10T21:02:18.766Z"
+    },
+    "connected": false,
+    "account": null,
+    "canBackup": false,
+    "publicBackupApproved": false,
+    "branch": null,
+    "lastBackup": null,
+    "lastCommit": null,
+    "lastError": "",
+    "pending": true,
+    "preferences": {
+      "timerMinutes": 10
+    },
+    "policy": {
+      "repoRequired": true,
+      "verifyOnline": true,
+      "allowOffline": true,
+      "autoBackup": true,
+      "intervalMinutes": 5
+    },
+    "appConfigured": true
+  },
+  "prefs": {
+    "schemaVersion": 1,
+    "theme": "development-road",
+    "lastPage": 20,
+    "timerMinutes": 10
+  }
+}
