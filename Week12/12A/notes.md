@@ -97,3 +97,57 @@ notes: How the Pipeline Connects from Start to Finish:
 
 Conclusion:
 Every phase feeds directly into the next: Mindset keeps the project scoped, Documentation defines the mission, Folder Structure prevents file corruption, and Prefabs/Retargeting allow us to build a playable, atmospheric prototype quickly and sustainably.
+
+# pitch
+understand: What I Did / Decided / Observed:
+Moving from the preparation phase into active contribution, I observed that our objective is not to jump blindly into coding a full game, but to execute a standardized development pipeline. I decided that our team's immediate mission must focus on delivering a cohesive, playable vertical slice rather than getting bogged down in feature bloat.
+
+The Work (What Needs to Be Done):
+"The work" means setting up a structured foundation before building out content. This involves:
+
+    Establishing a clean, shallow directory structure (/Context, /Requirements, /Resources, /Assets/StimuLye/) and initializing our living GDD with clear Lead/Support role assignments.
+
+    Setting up the Unity project with a verified Third-Person template to secure immediate movement physics and camera controls.
+
+    Importing and retargeting our custom 3D model (swapping the default mannequin with NaN’s avatar via Unity's Humanoid rig system).
+
+    Building modular corridor and room prefabs to establish the environment.
+
+The Finish Line (Definition of Done):
+The finish line is not a finished four-act game; it is a playable Vertical Slice prototype (MVP). Completion means having a stable, testable build where a player wakes up in the dark, navigates the opening ward corridor, and successfully interacts with a "Stimuli" item that visibly stabilizes a memory room without errors or broken dependencies.
+
+Question / Next Step:
+Once we verify that the player can walk through the corridor and trigger the first room transition, what specific performance and gameplay metrics will we test during our huddle?
+offer: I feel that I am a good leader who brings good structure to the team to maximize the efficiency of a team. I also like to see myself as a jack of all trades as I am able to adapt to new environments to provide good quality work to any field.
+limits: I feel like I need to manage my time a bit better since I have been becoming very overwhelmed with the team projects and their deadlines, mainly because people aren't as "reliable" as I would hope.
+availability: 2026-11-10 16:00–17:00 Pacific
+2026-11-12 16:00–17:00 Pacific
+Preferred contact: Discord
+My Discord (Samdan9) is pretty much always available. 
+tools: I would be using my IDE, Unity engine, and I would also use AI for some of the planning stuff. 
+aiTool: AI: Claude
+Task: Help me with the heavy lifting, which would be some of the code writing and organization.
+Verification: I will ensure that it works and does not infringe on any copyright to avoid conflicts.
+
+# availability
+notes: My Discord (Samdan9) is pretty much always available. 
+contact: Discord
+
+## slots
+
+### 0
+id: 8837512c-cbc9-4881-8d21-b3bd15883880
+date: 2026-11-10
+start: 16:00
+end: 17:00
+
+### 1
+id: 5f3edf29-d83d-4736-92c6-ca4055e59574
+date: 2026-11-12
+start: 16:00
+end: 17:00
+
+# aiPlan
+name: Claude
+task: Help me with the heavy lifting, which would be some of the code writing and organization.
+verify: I will ensure that it works and does not infringe on any copyright to avoid conflicts.
