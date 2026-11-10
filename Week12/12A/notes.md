@@ -70,3 +70,30 @@ Questions to Resolve Before Committing:
     Technical Pipeline: What specific Unity version (e.g., 2021.3 LTS), render pipeline (URP), and version control system (GitHub / Unity Version Control) are we locking in to avoid broken package dependencies?
 
     Role Ownership: Who is taking primary ownership as Lead vs. Support across the essential pipeline roles (Programming/Player Controller, 3D Assets/Modular Prefabs, Sound Design, and GDD Documentation)?
+
+# prepBoard
+notes: How the Pipeline Connects from Start to Finish:
+
+    Mindset Sets the Foundation:
+    Game development projects don't usually fail due to lack of imagination; they fail from unmanaged scope creep, burnout, and uncoordinated communication. The pipeline starts with a developer mindset: committing to small, achievable milestones, viewing bugs and failed builds as iteration data rather than failure, and prioritizing a playable Minimum Viable Product (MVP) over trying to build a 4-act game all at once.
+
+    Documentation Turns Ambition into Clear Boundaries:
+    The Game Development Document (GDD) translates creative concepts (like StimuLye's coma world and "Static" entity) into specific technical requirements. Instead of an unread 100-page document, it functions as a visual, living blueprint containing our core loop, milestone checklists, and explicit role definitions (Lead vs. Support) so everyone knows what to build without ambiguity.
+
+    Folder Architecture Protects the Project:
+    Before launching the engine, creating a clean directory structure with shallow file paths prevents technical issues like the Windows 256-character decompression limit. Placing change logs (.LOG) and local ReadMes inside dedicated folders (/Requirements, /Resources, /Context) ensures that code, art, and references are organized before team members start merging files.
+
+    Unity Implementation via Templates & Prefabs:
+    Inside Unity, the pipeline emphasizes efficiency over reinventing the wheel:
+
+        Starting from a verified Third Person Template provides instant player movement, physics, and camera controls.
+
+        Keeping custom assets in a dedicated team subfolder (/Assets/MyGame/) keeps third-party plugins and asset packages from cluttering our work.
+
+        Using Prefabs (the "cookie-cutter" model) allows environment pieces and interactive props to be duplicated and updated across scenes simultaneously without wasting memory.
+
+    Safe Character & Mechanic Integration:
+    To bring our custom story to life, the pipeline uses Unity's Humanoid Avatar retargeting. By unpacking the template armature, we can safely remove the placeholder mannequin and insert our custom character mesh without breaking underlying movement logic.
+
+Conclusion:
+Every phase feeds directly into the next: Mindset keeps the project scoped, Documentation defines the mission, Folder Structure prevents file corruption, and Prefabs/Retargeting allow us to build a playable, atmospheric prototype quickly and sustainably.
