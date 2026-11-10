@@ -617,3 +617,25 @@ Stage 5 (Amplification, QA hat): the decision diamond. If the playtest shows err
 
 Inputs are Unity Starter Assets, Adobe Mixamo, and Pixabay/FreeSound. Every credit goes in /Requirements/Credits.txt so these parts can be reused in later acts.
 Risk: a Unity 6.6 package update could break Starter Assets, so I make one Git commit per stage to roll back.
+
+# reportA
+checkpoint: I finished the entirety of week 12a which was a lot for me, but it was worth it.
+evidence: https://github.com/Lexicon-Lexxie/CS110-Lexxie/tree/main/Week12/12A
+
+Every file is in the 12a folder :)
+next: My next plan is to work on the unity engine
+
+# reportABoard
+notes: Checkpoint: StimuLye vertical slice (solo, Unity 6.6)
+
+This board is my checkpoint for today's huddle. I'm working alone, so it records where my plan stands and what I do next.
+
+Decided today: I limited the project to one vertical slice (the dark opening, one looping ward corridor, and one Stimuli memory room) instead of the full four-act game. I chose Unity 6.6 with URP, C#, the Third Person Starter Assets, Mixamo for the NaN character, and Git for version control. I organized the work into five stages following the AAA framework: Setup, Avatar, Prefabs, Stimuli mechanic, and Playtest.
+
+Done so far: all the planning is finished. That means the pitch and mission, the tool stack, the class and component plan, the pipeline board, and the plan for reusing assets and crediting their sources. I have not built anything in Unity yet, so the build is at 0% and the planning is at 100%.
+
+Next steps: I will create the project folders and Project_LOG.txt, then start the Unity project from the Third Person template. After that I will import the NaN character, whitebox the ward prefabs, write the StimulusItem and RoomStabilizer scripts, and finish with a playtest. The target is no console errors and a stable 60 FPS.
+
+Risks: a Unity 6.6 package update could break the Starter Assets, so I will make one Git commit per stage so I can roll back. Anything outside the slice goes on a later list to prevent scope creep.
+
+Question for feedback: is this slice small enough for me to finish and test all five stages by myself?
