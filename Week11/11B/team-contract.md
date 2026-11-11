@@ -2,7 +2,7 @@
 
 **Project:** StimuLye (3D puzzle-adventure game in Unity, C#, PC)
 **Course:** CS110
-**Date:** [date]
+**Date:** [11/10/2026]
 **Team repository:** https://github.com/Lexicon-Lexxie/CS110-Awayzo
 
 ## 1. Mission
