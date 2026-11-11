@@ -1,0 +1,32 @@
+Waking up as a blank slate, a black screen where the player doesn’t know the game has started, and orbs of light were the strongest ideas by far. “Bob” was only a placeholder name for the protagonist, though I think the internal name "NaN" would be more fitting. "NaN" typically means Not a Number in math but in this case I think it would be able to stand for "No Assigned Name. The two things the team never answered were what the special gift does and who the antagonist is. I’d make those two gaps the center of the story, so here’s my pitch.
+
+StimuLye (title)
+
+You wake as a point of light in total darkness. You’re a mind in a coma, lying in a hospital bed, and everything you explore is rebuilt from the memories of the person/entity in that bed. Call it NaN internally, never reveal true name or pronouns (because there are none!)
+
+The gift. You can restore the 'world' by remembering. You collect "Stimuli", objects that provide sensory details to the environment around NaN, interacting with Stimuli fixes a piece of the dark into a stable room.
+
+The antagonist. "Static" a shape shifting entity that stalks your every move, and learns from the player. It’s partly NaN's own refusal to remember, because something went wrong. That covers the self-versus-environment question the team kept debating. 
+
+Story in four acts
+
+The Dark. The player moves the mouse and nothing seems to happen. A jolt of movement reveals an area of what seems to be a poorly 3D scanned room, with low poly details. When the player starts moving and looking around the room, the room becomes more detailed, revealing...
+
+The Ward. It’s an empty hospital where corridors loop, doors open onto memory rooms, and puzzles reassemble fragments. Reality slips in and out without a transition.
+
+The Deep. The hospital decays into liminal, Backrooms-style spaces. The Static creates a link of reality to your inner mind, where the impossible, and abnormal, blends with the normal.
+
+Playing the game as a walking simulator leads NaN to the hall of names, doors with names on them (the team) and a final door with no name. Approaching it causes the door to slam open, sucking you into the static, that engulfs the screen. Pressing (Esc) causes a (CRT TV power down effect) that fades to black. when the player moves the camera, it is shown that you had only been watching the heart monitor beside the bed, looping the game. If the player decides to play the game "incorrectly" by trying to do things that do not conform to reality, leads the NaN down an alternate path, where things become even stranger, with static trying to create obstacles (puzzles) for the player to solve with unusual solutions. This leads the player to the finale which is where the player is forced to run from the static in a world that falls apart until you reach the doorway with an exit sign that says "WAKE UP" instead of exit, leading into white. When the player goes in, everything becomes quiet. Turning around reveals a beautiful scene with a hospital bed in the middle.
+
+Features, mapped to your ideas
+Black-screen start with the mouse-jolt reveal (Lexxie’s idea).
+Esc drops you back to black, and when you turn around you’re standing in the settings room. The menu is a place in the story.
+Orbs resolve into objects as you approach, which doubles as a cheap render-distance trick.
+Stimuli needs to be expanded upon
+Liminal spaces from Paulina’s Backrooms idea.
+Interactive objects, like Lexxie’s “what happens if I drop this eraser.”
+Body assembled from memories. You begin as a floating light, then gain a ghost-like body that levitates, a nod to the joke that stuck.
+Self-insert name for the player, with NaN as the internal file name.
+Honest caveats
+
+For a first prototype I’d build only the dark opening, one ward, and one memory room, since a polished slice will impress more than a half-built whole.
