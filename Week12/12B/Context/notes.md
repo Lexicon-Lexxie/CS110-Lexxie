@@ -639,3 +639,94 @@ Next steps: I will create the project folders and Project_LOG.txt, then start th
 Risks: a Unity 6.6 package update could break the Starter Assets, so I will make one Git commit per stage so I can roll back. Anything outside the slice goes on a later list to prevent scope creep.
 
 Question for feedback: is this slice small enough for me to finish and test all five stages by myself?
+
+# dayBReview
+recap: What I understand: My goal is a beautiful, playable scene in Unity with a 3D player seen in third person. My plan is to build one small vertical slice of StimuLye, not the whole game. The slice is a dark opening, one looping ward corridor, and one Stimuli memory room that changes when the player picks up an item. I'll use Unity 6.6 with URP and the Third Person Starter Assets, so movement and the camera work from the start. The plan has five stages: Setup, NaN avatar, ward prefabs, the Stimuli mechanic, and a playtest. I test after every stage and keep a Project_LOG.txt, so I can see what changed if something breaks.
+
+My job: I'm working solo, so I do every role. As technical lead I set up the project and Git. As the 3D artist I import and rig the NaN character from Mixamo. As the level designer I build the modular ward prefabs. As the programmer I write StimulusItem and RoomStabilizer. As QA I playtest for errors and frame rate. I also keep a credits file for every outside asset I use.
+
+What I need to clarify: (1) Is the vertical slice small enough for me to finish and test alone? (2) Does "beautiful" mean polished lighting, fog and materials, or is a clean whitebox with good atmosphere enough? (3) Do I need a specific Unity version or template for this assignment, and will it still work if Unity updates packages mid-project? (4) Which free assets and audio am I allowed to use, and how should I credit them?
+
+I'm ready to move on to the whiteboard.
+goal: true
+owners: true
+blockers: true
+notes: Solo review, so I checked each statement myself.
+
+Goal and finish line: I'm aiming for a beautiful, playable Unity scene with a 3D third-person player. My finish line is one working vertical slice (dark opening, looping ward corridor, one Stimuli memory room) that plays with no console errors.
+
+Next task, deadline and dependencies: My next task is stage 1, setting up the Unity 6.6 project with the Third Person Starter Assets and Project_LOG.txt. Each later stage depends on the one before it: avatar, then ward prefabs, then the Stimuli scripts, then the playtest. I can't start the Stimuli scripts until the avatar and prefabs both work. I'll finish one stage per work session and keep one Git commit per stage.
+
+Blockers and how I'll check results: The main blocker is a Unity 6.6 package update breaking the Starter Assets, which Git rollbacks cover. I'll check each stage by running it in Play mode (WASD, jump, camera, no pink shaders, no clipping), and the final check is 0 errors and a stable 60 FPS.
+
+What changed: I narrowed the scope from the full game to one slice, and every outside asset now gets credited in Credits.txt.
+
+Needs attention: I still need to confirm how detailed "beautiful" needs to be (lighting and materials versus a clean whitebox) and which assets I'm allowed to use.
+
+# reportB
+execution: What I personally did: I'm working solo, so everything here is my own work. I planned the StimuLye vertical slice and wrote the pitch, mission, tool stack and a five-stage build pipeline (Setup, NaN avatar, ward prefabs, Stimuli mechanic, playtest). I made two documentation boards, a team plan board and a checkpoint board, and wrote my recap and huddle review notes. 
+
+Evidence: Is inside the github folder through the previous actions.
+
+What I observed: When I opened the boards, the five stages connected in order and each had a clear test. The checkpoint board shows planning at 100% and the Unity build at 0%, which matches where the project actually is.
+
+Unresolved problem / question: I have not built the scene in Unity yet, so I can't show test results for movement, the avatar, or the Stimuli mechanic. My next step is stage 1, creating the Unity 6.6 project with the Third Person Starter Assets and testing WASD, jump and camera. I also still need to confirm how detailed "beautiful" needs to be for this assignment.
+tests: Setup / import checks: I created the project from Unity 6.6's High Definition 3D (HDRP) template. The render pipeline and sample scene were already configured, so I did not need to import packages manually. Observed: the Console showed 0 errors after opening.
+
+Player configuration and result: Observed: the sample scene loads and I can move through it / the third-person player moves with WASD, jumps and the camera follows.
+
+Failure → fix → retest: No failure occurred, because the template was pre-configured, so I have no fix to report yet.
+
+
+Predictions (not observed yet): HDRP is heavier than URP, so frame rate may drop on my computer once I add my own scene. Mixamo materials may show pink in HDRP, and I would fix that with the Render Pipeline Converter or by assigning HDRP/Lit materials, then retest.
+
+handoff: Personal GitHub: https://github.com/Lexicon-Lexxie/CS110-Lexxie (folder Week12/12B). Commit:https://github.com/Lexicon-Lexxie/CS110-Lexxie/commit/609ae457fe348d2259576d1b180096a9fe684ea7 Solo project, so there is no team link.
+
+Project / source paths: The Unity 6.6 (6000.6.7f1) HDRP project is at Week12/12B/project-source/UnityProject/. The scene is Assets/Scenes/SampleScene.unity. My own work goes in Assets/StimuLye/ (Scripts, Prefabs, Materials, Models, Animations, Audio, Scenes); these folders are set up but empty so far, because I have not started the custom build.
+
+PDFs: Week12/12B/Requirements/issued-pdfs/ (PREP-F39AC39A936F4F003C2A6D22 and FORM-2935112442B32DC30DC60A17, FORM-9A9193840307A5B39A239303, FORM-A91B6BD4CBEDB5F72519F72E). Working-Draft.pdf is in Requirements/ and is not an issued record.
+
+Boards / images: Resources/boards/ (prepBoard, pipelineBoard, huddleBoard, reportABoard) and test evidence in Evidence/testfixconsole.png, a Play-mode screenshot with the Console.
+
+Credits: The scene, third-person controller, meshes, materials and textures come from Unity's High Definition 3D (HDRP) template (Assets/SampleSceneAssets/), so they are Unity's, not mine. I have added no other third-party assets yet. Any future outside asset (e.g. Mixamo model, audio) will be credited in Requirements/Credits.txt.
+How to reproduce: (1) Clone the repo. (2) In Unity Hub, Add project from disk and choose Week12/12B/project-source/UnityProject/. (3) Open with Unity 6000.6.7f1; the first open is slow while Library/ regenerates. (4) Open Assets/Scenes/SampleScene.unity and press Play. (5) Move with WASD, sprint with Shift, jump with Space. Full folder map and instructions are in Week12/12B/README.md. The report opens by double-clicking index.html.
+
+Observed: In my test the project opened and ran in Play mode with the third-person player visible and the Console showing 0 errors and 1 warning (HDRP "ScriptableRuntimeReflectionSystemSettings.system is assigned more than once", a template warning). Not yet tested: NaN import, ward prefabs, Stimulus scripts, frame rate.
+
+Personal GitHub: https://github.com/Lexicon-Lexxie/CS110-Lexxie (folder Week12/12B). Commit: [paste the commit URL or short hash]. Solo project, so there is no team link.
+
+Project / source paths: The Unity 6.6 (6000.6.7f1) HDRP project is at Week12/12B/project-source/UnityProject/. The scene is Assets/Scenes/SampleScene.unity. My own work goes in Assets/StimuLye/ (Scripts, Prefabs, Materials, Models, Animations, Audio, Scenes). These folders are set up but empty so far, because the custom build has not started.
+
+PDFs: Week12/12B/Requirements/issued-pdfs/ (PREP-F39AC39A936F4F003C2A6D22, FORM-2935112442B32DC30DC60A17, FORM-9A9193840307A5B39A239303, FORM-A91B6BD4CBEDB5F72519F72E). Working-Draft.pdf is in Requirements/ and is not an issued record.
+
+Boards / images: Resources/boards/ (prepBoard, pipelineBoard, huddleBoard, reportABoard). Test evidence is Evidence/testfixconsole.png, a Play-mode screenshot with the Console.
+
+Credits: The scene, third-person controller, meshes, materials and textures come from Unity's High Definition 3D (HDRP) template (Assets/SampleSceneAssets/), so they are Unity's, not mine. I have added no other third-party assets yet. Any future outside asset (such as a Mixamo model or audio) will be credited in Requirements/Credits.txt.
+
+Reproduction instructions: (1) Clone the repo. (2) In Unity Hub, choose Add project from disk and select Week12/12B/project-source/UnityProject/. (3) Open it with Unity 6000.6.7f1; the first open is slow while Library/ regenerates. (4) Open Assets/Scenes/SampleScene.unity and press Play. (5) Move with WASD, sprint with Shift, jump with Space. The full folder map is in Week12/12B/README.md, and the report opens by double-clicking index.html.
+
+Observed (Unity): The project opened and ran in Play mode with the third-person player visible. The Console showed 0 errors and 1 warning (HDRP "ScriptableRuntimeReflectionSystemSettings.system is assigned more than once", which comes from the template). Not yet tested: NaN import, ward prefabs, Stimulus scripts, frame rate.
+
+Failure -> fix -> retest (Git push): When I pushed my reorganized folder, GitHub rejected it with error GH001 because a 209 MB file, Week12/12B.zip, was in my commit and GitHub's limit is 100 MB. That zip was only a transfer copy and should never have been committed. Deleting the file in a later commit did not help, because the zip was still in the unpushed history. Fix: I ran git reset --soft origin/main to undo my two unpushed commits while keeping my files, removed the zip from Git and from disk, added *.zip to .gitignore, and checked with git status that no file over 100 MB was staged. Retest: I committed again and the push succeeded. The largest remaining files are two template lightmaps (about 27 MB and 23 MB), which are under the limit. Lesson: check git status for large files before committing.
+
+Other issue noted: my earlier planning notes say URP, but the project uses HDRP. I documented this in README.md section 9.
+reflection: Mission: Make a beautiful playable scene in Unity with a 3D player viewed in third person, built as a StimuLye vertical slice (dark opening, looping ward corridor, one Stimuli memory room).
+
+What I verified (observed): The Unity 6.6 (6000.6.7f1) High Definition 3D template opens and runs in Play mode. The third-person player is already in the scene and controllable (WASD, Shift, Space), and the Console showed 0 errors and 1 warning (HDRP "ScriptableRuntimeReflectionSystemSettings.system is assigned more than once", from the template). Evidence: Evidence/testfixconsole.png. I also organized the repo (Context, Requirements, Resources, Evidence, project-source), wrote a README with all paths and reproduction steps, and pushed it to GitHub after fixing a push rejection caused by a 209 MB zip that I had committed by mistake.
+
+Useful discovery: The template already provides the third-person player, camera and a high-quality lit scene, so the "beautiful scene + third-person player" part of my goal works before I build anything custom. This changes my plan: instead of spending time on a controller, I should spend it on the StimuLye content. I also discovered that my planning notes assumed URP, but the template is HDRP, which is heavier and means my C# package table (UnityEngine.Rendering.Universal) is wrong for this project. Finally, I learned to check git status for large files before committing, because GitHub rejects files over 100 MB.
+
+What remains (not yet done or tested): importing the NaN model (Mixamo, Humanoid rig) into PlayerArmature; building modular ward and corridor prefabs in Assets/StimuLye/Prefabs; writing StimulusItem and RoomStabilizer in Assets/StimuLye/Scripts; adding the Static audio cue; and measuring frame rate and console errors in a final playtest. The Assets/StimuLye folders exist but are empty.
+
+Next steps: (1) decide whether to keep HDRP or switch to URP, and update the documentation to match, (2) import NaN and test the swap, which is where I expect my first failure, fix and retest, (3) whitebox one corridor and one memory room with prefabs, (4) write the Stimulus scripts and test that pickup changes the room, (5) playtest for 0 errors and stable FPS and record the result in Project_LOG.txt.
+
+Unresolved question: Is HDRP acceptable for this assignment, or should I use URP as I planned? I will keep HDRP unless told otherwise, because the template already works.
+
+# reportBBoard
+notes: Person involved: Lexxie (solo project, so all work and decisions are mine).
+
+What this image shows: Left side (A) is my real Unity test from 2026-11-12. Unity 6.6 (6000.6.7f1) opened the HDRP SampleScene and ran in Play mode. The third-person robot player is visible in the Game view, and the Console shows 0 errors and 1 warning. The warning says an HDRP reflection setting is "assigned more than once". It comes from the template, not from my changes. Result: the template already gives me a playable third-person scene, which is the first part of my mission. My own StimuLye content (NaN model, ward prefabs, Stimulus scripts) is not built yet.
+
+Right side (B) is a failure, fix and retest from my Git work. Failure: my push was rejected by GitHub (error GH001) because a 209 MB file, Week12/12B.zip, was in my commit and the limit is 100 MB. I had only used the zip to transfer files and committed it by mistake. Fix: deleting the file was not enough because it was still in my two unpushed commits. I ran git reset --soft origin/main to undo the commits while keeping my files, removed the zip, added *.zip to .gitignore, and checked git status for any file over 100 MB. Retest: I committed and pushed again, and the push went through. The largest files left are two template lightmaps of about 27 MB and 23 MB, which are under the limit.
+
+My interpretation: the template saves me from building movement and camera, so my time should go into the StimuLye content. The Git problem showed me to check file sizes before committing, because large files block the whole push.

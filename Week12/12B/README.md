@@ -5,6 +5,7 @@ Solo project. Goal: *a beautiful playable scene in Unity with a 3D player viewed
 
 - **GitHub repo:** https://github.com/Lexicon-Lexxie/CS110-Lexxie (this folder lives at `Week12/12B/`, next to `Week12/12A/`)
 - **Public verification code:** `VIEW-9265F91D9B43EF8355AB19A9` (also in [`PERSONAL-SUBMISSION-CODE.txt`](PERSONAL-SUBMISSION-CODE.txt))
+- **Latest pushed commit:** https://github.com/Lexicon-Lexxie/CS110-Lexxie/commit/609ae457fe348d2259576d1b180096a9fe684ea7
 - **Contact:** Discord `Samdan9` · availability in [`Context/availability.ics`](Context/availability.ics)
 
 ---
@@ -17,7 +18,7 @@ Solo project. Goal: *a beautiful playable scene in Unity with a 3D player viewed
 | **Open the game project** | Unity Hub → *Add project from disk* → select `project-source/UnityProject/`. Use **Unity 6000.6.7f1 (Unity 6.6)**. |
 | **Play the scene** | Open `Assets/Scenes/SampleScene.unity`, press **Play**. Move with **WASD**, sprint with **Shift**, jump with **Space**, look with the mouse. |
 | **See the test evidence** | [`Evidence/testfixconsole.png`](Evidence/testfixconsole.png) |
-| **Find issued course PDFs** | [`Requirements/issued-pdfs/`](Requirements/issued-pdfs/) |
+| **Find issued course PDFs** | [`Requirements/issued-pdfs/`](Requirements/issued-pdfs/) (prep, pitch, team, reportA, reportB) |
 | **Submit on Canvas** | Repo URL **and** the `VIEW-…` code above (see §8). |
 
 First open of the Unity project is slow: Unity regenerates the `Library/` folder (not committed) and compiles HDRP shaders.
@@ -40,16 +41,17 @@ First open of the Unity project is slow: Unity regenerates the `Library/` folder
 │   └── Course-README.txt         ← original README supplied by the course export
 │
 ├── Requirements/                 ← official records, drafts, submission paperwork
-│   ├── issued-pdfs/              ← numbered issued records (PREP + FORM PDFs)
+│   ├── issued-pdfs/              ← numbered issued records: PREP, pitch, team, reportA, reportB
 │   ├── Working-Draft.pdf         ← NOT an issued record, just a draft printout
 │   ├── work.json                 ← restores the editable draft via "My work" on the course site
 │   └── prefs.json                ← course site preferences (timer, last page)
 │
 ├── Resources/                    ← visuals used by the report
-│   └── boards/                   ← whiteboard exports (prep, pipeline, huddle, report A)
+│   └── boards/                   ← whiteboard exports (prep, pipeline, huddle, report A, report B)
 │
 ├── Evidence/                     ← proof of tested work
 │   └── testfixconsole.png        ← Unity Play-mode screenshot with Console (2026-11-12)
+│                                    (the report B board in Resources/boards/ embeds it)
 │
 └── project-source/               ← the engine project
     ├── ADD-YOUR-ENGINE-FILES-HERE.txt   ← course placeholder (now fulfilled by UnityProject/)
@@ -139,7 +141,7 @@ The first two and `CharacterController` already exist in the template. The other
 4. **Amplification** — `StimulusItem` + `RoomStabilizer` + first Static audio cue.
 5. **Amplification** — playtest: zero console errors, stable frame rate.
 
-Boards: [`Resources/boards/pipelineBoard.png`](Resources/boards/pipelineBoard.png) · [`huddleBoard.png`](Resources/boards/huddleBoard.png) · [`prepBoard.png`](Resources/boards/prepBoard.png) · [`reportABoard.png`](Resources/boards/reportABoard.png)
+Boards: [`Resources/boards/pipelineBoard.png`](Resources/boards/pipelineBoard.png) · [`huddleBoard.png`](Resources/boards/huddleBoard.png) · [`prepBoard.png`](Resources/boards/prepBoard.png) · [`reportABoard.png`](Resources/boards/reportABoard.png) · [`reportBBoard.png`](Resources/boards/reportBBoard.png) (Unity test + Git failure → fix → retest)
 
 ---
 
@@ -148,7 +150,9 @@ Boards: [`Resources/boards/pipelineBoard.png`](Resources/boards/pipelineBoard.pn
 | Area | State |
 |---|---|
 | Written prep, pitch, AI plan, huddle, tables | ✅ done (`Context/notes.md`, `index.html`) |
-| Issued records (PREP + 3 FORM PDFs) | ✅ in `Requirements/issued-pdfs/` |
+| Issued records (PREP, pitch, team, reportA, **reportB**) | ✅ in `Requirements/issued-pdfs/` |
+| Report B written (tests, handoff, reflection, evidence board) | ✅ in `Context/notes.md` and `index.html` |
+| Git push fixed and pushed | ✅ commit `609ae45` (a 209 MB transfer zip had been committed by mistake, removed from history with `git reset --soft`) |
 | Unity project created, opens, **runs in Play mode** | ✅ screenshot in `Evidence/` |
 | Third-person player works | ✅ template robot player visible and controllable in the evidence screenshot |
 | Console result | ⚠️ 0 errors, **1 warning**: *"ScriptableRuntimeReflectionSystemSettings.system is assigned more than once"* (HDRP template warning, harmless, from the template) |
@@ -196,3 +200,5 @@ Boards: [`Resources/boards/pipelineBoard.png`](Resources/boards/pipelineBoard.pn
 | `index.html` links | updated to the new paths (all 8 verified) |
 
 No file inside the Unity project was edited or moved, so GUID references and `.meta` files are intact.
+
+**Update (second export, 2026-11-12):** a newer course export (`CS110-Lexxie-2026-11-12/`) was merged into this structure and the duplicate folder removed. Newer `notes.md`, `work.json`, `prefs.json`, `Working-Draft.pdf`, `availability.ics`, `index.html` and the boards replaced the older copies; the new issued record `FORM-957B214A857BA6296BF323AB.pdf` (reportB) and `Resources/boards/reportBBoard.png` were added. The older issued PDFs were kept because their text is identical to the new export's copies. `index.html` links were re-pointed and verified (9 of 9 resolve).
