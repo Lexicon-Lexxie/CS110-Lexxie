@@ -1,0 +1,24 @@
+# Unity generated (never commit)
+project-source/UnityProject/[Ll]ibrary/
+project-source/UnityProject/[Tt]emp/
+project-source/UnityProject/[Oo]bj/
+project-source/UnityProject/[Bb]uild/
+project-source/UnityProject/[Bb]uilds/
+project-source/UnityProject/[Ll]ogs/
+project-source/UnityProject/[Uu]ser[Ss]ettings/
+project-source/UnityProject/[Mm]emoryCaptures/
+project-source/UnityProject/.vs/
+project-source/UnityProject/.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+# Private course data (never commit recovery keys)
+*RECOVERY*
+*recovery-key*
+# OS
+.DS_Store
+Thumbs.db
